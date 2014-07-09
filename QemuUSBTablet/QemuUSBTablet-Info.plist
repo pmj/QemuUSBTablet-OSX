@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>eu.philjordan.driver.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>QemuUSBTablet</key>
+		<dict>
+			<key>IOProviderClass</key>
+			<string>IOHIDInterface</string>
+			<key>ProductID</key>
+			<integer>1</integer>
+			<key>VendorID</key>
+			<integer>1575</integer>
+			<key>IOClass</key>
+			<string>eu_philjordan_driver_QemuUSBTableEventDriver</string>
+			<key>CFBundleIdentifier</key>
+			<string>eu.philjordan.driver.${PRODUCT_NAME:rfc1034identifier}</string>
+			<key>DeviceUsagePairs</key>
+			<array>
+				<dict>
+					<key>DeviceUsage</key>
+					<integer>1</integer>
+					<key>DeviceUsagePage</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 Phil Jordan. All rights reserved.</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOHIDFamily</key>
+		<string>1.5</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0</string>
+	</dict>
+</dict>
+</plist>
