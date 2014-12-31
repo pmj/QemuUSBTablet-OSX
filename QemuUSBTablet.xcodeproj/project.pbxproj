@@ -92,6 +92,7 @@
 		29BA3F721A5497900067FC9E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = pkg/Resources; sourceTree = "<group>"; };
 		29BA3F731A5497900067FC9E /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scripts; path = pkg/scripts; sourceTree = "<group>"; };
 		29BA3F741A549D520067FC9E /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		29BA3F751A54A1000067FC9E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		2923E203196DB2C900724858 = {
 			isa = PBXGroup;
 			children = (
+				29BA3F751A54A1000067FC9E /* readme.md */,
 				29BA3F741A549D520067FC9E /* LICENSE.txt */,
 				2923E213196DB2C900724858 /* QemuUSBTabletMavericks */,
 				2923E23A196F186D00724858 /* QemuUSBTablet */,
