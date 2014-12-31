@@ -1,0 +1,14 @@
+diff --git b/pkg/Distribution.xml a/pkg/Distribution.xml
+index 27d48d3..f349c6d 100644
+--- b/pkg/Distribution.xml
++++ a/pkg/Distribution.xml
+@@ -1,5 +1,9 @@
+ <?xml version="1.0" encoding="utf-8" standalone="no"?>
+ <installer-gui-script minSpecVersion="1">
++    <title>OS X Driver for QEMU&apos;s USB Tablet device</title>
++    <welcome file="Welcome.rtf"/>
++    <license file="License.rtf"/>
++
+     <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
+     <pkg-ref id="eu.philjordan.driver.QemuUSBTablet"/>
+     <options customize="never" require-scripts="false"/>

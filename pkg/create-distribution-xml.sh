@@ -10,6 +10,9 @@ pkgbuild --root "$1"  --component-plist QemuUSBTablet-kext.plist --scripts ./scr
 echo building QemuUSBTabletUSBDriver.pkg
 pkgbuild --root "$1"  --component-plist QemuUSBTabletUSBDriver-kext.plist --scripts ./scripts/ QemuUSBTabletUSBDriver.pkg
 
-echo generating Distribution.xml
+echo auto-generating Distribution.xml
 productbuild --synthesize --package QemuUSBTablet.pkg --package QemuUSBTabletUSBDriver.pkg Distribution.xml
+
+echo patching Distribution.xml with manual changes
+patch -p2 < distribution-xml.patch
 
