@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2923E238196F186D00724858"
-               BuildableName = "QemuUSBTablet.kext"
-               BlueprintName = "QemuUSBTablet"
+               BlueprintIdentifier = "29BA3F5A1A548C0F0067FC9E"
+               BuildableName = "QemuUSBTablet-all"
+               BlueprintName = "QemuUSBTablet-all"
                ReferencedContainer = "container:QemuUSBTablet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "29BA3F5A1A548C0F0067FC9E"
+            BuildableName = "QemuUSBTablet-all"
+            BlueprintName = "QemuUSBTablet-all"
+            ReferencedContainer = "container:QemuUSBTablet.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "29BA3F5A1A548C0F0067FC9E"
+            BuildableName = "QemuUSBTablet-all"
+            BlueprintName = "QemuUSBTablet-all"
+            ReferencedContainer = "container:QemuUSBTablet.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

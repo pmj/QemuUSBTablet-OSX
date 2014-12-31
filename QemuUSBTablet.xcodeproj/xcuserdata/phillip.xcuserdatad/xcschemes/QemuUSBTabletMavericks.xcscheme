@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2923E238196F186D00724858"
-               BuildableName = "QemuUSBTablet.kext"
-               BlueprintName = "QemuUSBTablet"
+               BlueprintIdentifier = "2923E20D196DB2C900724858"
+               BuildableName = "QemuUSBTabletUSBDriver.kext"
+               BlueprintName = "QemuUSBTabletUSBDriver"
                ReferencedContainer = "container:QemuUSBTablet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2923E20D196DB2C900724858"
+            BuildableName = "QemuUSBTabletUSBDriver.kext"
+            BlueprintName = "QemuUSBTabletUSBDriver"
+            ReferencedContainer = "container:QemuUSBTablet.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

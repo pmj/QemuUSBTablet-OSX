@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <title>OS X Driver for QEMU&apos;s USB Tablet device</title>
+    <welcome file="Welcome.rtf"/>
+    <license file="License.rtf"/>
+
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet"/>
+    <options customize="never" require-scripts="false"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
+            <line choice="eu.philjordan.driver.QemuUSBTablet"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver" visible="false">
+        <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
+    </choice>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver" version="1.0.0" onConclusion="none">QemuUSBTablet.pkg</pkg-ref>
+    <choice id="eu.philjordan.driver.QemuUSBTablet" visible="false">
+        <pkg-ref id="eu.philjordan.driver.QemuUSBTablet"/>
+    </choice>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet" version="1.0.0" onConclusion="none">QemuUSBTabletUSBDriver.pkg</pkg-ref>
+</installer-gui-script>

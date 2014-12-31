@@ -1,0 +1,3 @@
+#!/bin/sh
+touch /Library/Extensions
+touch /System/Library/Extensions

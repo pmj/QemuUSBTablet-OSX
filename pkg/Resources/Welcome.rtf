@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11240\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b\fs26 \cf0 OS X Device Driver for QEMU\'92s USB Tablet, driver version 1.0
+\b0\fs24 \
+\
+Please note: only install this in a virtual machine, or on an OS X system volume that will be used in a virtual machine. The driver is useless on a regular Mac.\
+\
+When running a virtual machine within a window on another system, it is helpful to emulate an \'93absolute\'94 pointing device like a tablet, instead of a relative device such as a mouse. Qemu offers such a device via the 
+\f1 -device usb-tablet
+\f0  option. However, this device is not automatically claimed by OS X\'92s HID (human interface device) drivers. This package includes 2 kexts for enabling the use of the Qemu USB tablet in OS X.\
+\
+1. A codeless kext for making Apple\'92s HID drivers pick up the device. (all OS X versions) This causes the device to be used by the OS as a pointing device.\
+\
+2. A regular kext for rewriting the HID Report Descriptor to change it to \'93mouse\'94 usage. On OS X Mavericks (10.9)\'a0and newer, absolute pointing devices which report a \'93usage\'94 of \'93Pointer\'94 instead of \'93Mouse\'94 or \'93Digitiser\'94 are assumed to be sticks, not tablets, and calibrated to generate relative pointer movement. Qemu\'92s tablet reports as a \'93Pointer\'94 device, so this driver changes that to \'93Mouse\'94 before allowing Apple\'92s driver to access it. This driver is only loaded on OS X 10.9 or newer and is ignored by older versions, where it is not needed.\
+\
+This driver is Free Software, released under the LGPL (GNU Lesser General Public License) Version 3.\
+\
+For further information and updates, please see http://www.philjordan.eu/osx-virt/}

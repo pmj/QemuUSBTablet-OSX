@@ -4,10 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>eu.philjordan.driver.QemuUSBTabletHIDEventDriver</string>
+	<string>eu.philjordan.driver.QemuUSBTablet</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -15,39 +17,45 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>${MODULE_VERSION}</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${MODULE_VERSION}</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>QemuUSBTablet</key>
+		<key>QemuUSBTabletHIDDevice</key>
 		<dict>
 			<key>IOProviderClass</key>
-			<string>IOHIDInterface</string>
-			<key>ProductID</key>
+			<string>IOUSBInterface</string>
+			<key>idProduct</key>
 			<integer>1</integer>
-			<key>VendorID</key>
+			<key>idVendor</key>
 			<integer>1575</integer>
 			<key>IOClass</key>
-			<string>IOHIDEventDriver</string>
+			<string>eu_philjordan_driver_QemuUSBTabletDriver</string>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
+			<key>bConfigurationValue</key>
+			<integer>1</integer>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.iokit.IOHIDFamily</string>
-			<key>DeviceUsagePairs</key>
-			<array>
-				<dict>
-					<key>DeviceUsage</key>
-					<integer>1</integer>
-					<key>DeviceUsagePage</key>
-					<integer>1</integer>
-				</dict>
-			</array>
+			<string>eu.philjordan.driver.QemuUSBTablet</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Phil Jordan. All rights reserved.</string>
+	<string>Copyright © 2014-2015 Phil Jordan. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
-	<dict/>
+	<dict>
+		<key>com.apple.iokit.IOHIDFamily</key>
+		<string>2.0</string>
+		<key>com.apple.iokit.IOUSBHIDDriver</key>
+		<string>660.4</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>13.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>13.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>13.0</string>
+	</dict>
 </dict>
 </plist>
