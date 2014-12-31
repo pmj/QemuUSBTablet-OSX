@@ -43,7 +43,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014-2015 Phil Jordan. All rights reserved.</string>
+	<string>Copyright © 2014-2015 Phil Jordan. This code made available under the GNU LGPL</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOHIDFamily</key>

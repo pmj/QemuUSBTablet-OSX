@@ -46,7 +46,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Phil Jordan. All rights reserved.</string>
+	<string>Copyright © 2014 Phil Jordan. This code made available under the GNU LGPL.</string>
 	<key>OSBundleLibraries</key>
 	<dict/>
 </dict>
