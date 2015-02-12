@@ -40,6 +40,8 @@
 			<integer>1</integer>
 			<key>CFBundleIdentifier</key>
 			<string>eu.philjordan.driver.QemuUSBTablet</string>
+			<key>AbsoluteAxisBoundsRemovalPercentage</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>

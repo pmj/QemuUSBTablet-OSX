@@ -79,7 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2923E20E196DB2C900724858 /* QemuUSBTabletMavericks.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = QemuUSBTabletMavericks.kext; path = QemuUSBTabletUSBDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		2923E20E196DB2C900724858 /* QemuUSBTabletUSBDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QemuUSBTabletUSBDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		2923E212196DB2C900724858 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		2923E239196F186D00724858 /* QemuUSBTablet.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QemuUSBTablet.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		2923E23C196F186D00724858 /* QemuUSBTablet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QemuUSBTablet-Info.plist"; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		2923E20F196DB2C900724858 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2923E20E196DB2C900724858 /* QemuUSBTabletMavericks.kext */,
+				2923E20E196DB2C900724858 /* QemuUSBTabletUSBDriver.kext */,
 				2923E239196F186D00724858 /* QemuUSBTablet.kext */,
 			);
 			name = Products;
@@ -235,7 +235,7 @@
 			);
 			name = QemuUSBTabletUSBDriver;
 			productName = QemuUSBTablet;
-			productReference = 2923E20E196DB2C900724858 /* QemuUSBTabletMavericks.kext */;
+			productReference = 2923E20E196DB2C900724858 /* QemuUSBTabletUSBDriver.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
 		2923E238196F186D00724858 /* QemuUSBTablet */ = {
@@ -454,7 +454,7 @@
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.0;
+				MODULE_VERSION = 1.1b1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -468,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.0;
+				MODULE_VERSION = 1.1b1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
