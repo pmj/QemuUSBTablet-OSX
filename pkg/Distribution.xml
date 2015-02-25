@@ -21,5 +21,5 @@
     <choice id="eu.philjordan.driver.QemuUSBTablet" visible="false">
         <pkg-ref id="eu.philjordan.driver.QemuUSBTablet"/>
     </choice>
-    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet" version="1.0.0" onConclusion="none">QemuUSBTabletUSBDriver.pkg</pkg-ref>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet" version="1.1.0" onConclusion="none">QemuUSBTabletUSBDriver.pkg</pkg-ref>
 </installer-gui-script>

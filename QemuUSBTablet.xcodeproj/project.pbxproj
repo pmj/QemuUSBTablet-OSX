@@ -454,7 +454,7 @@
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1b1;
+				MODULE_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -468,7 +468,7 @@
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1b1;
+				MODULE_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -491,7 +491,7 @@
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1b1;
+				MODULE_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -510,7 +510,7 @@
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1b1;
+				MODULE_VERSION = 1.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
