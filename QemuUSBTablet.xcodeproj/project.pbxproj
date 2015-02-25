@@ -491,7 +491,7 @@
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.0.0d1;
+				MODULE_VERSION = 1.1b1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -510,7 +510,7 @@
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.0.0d1;
+				MODULE_VERSION = 1.1b1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
