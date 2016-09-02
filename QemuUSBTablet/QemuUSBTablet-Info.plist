@@ -7,7 +7,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>eu.dennis-jordan.driver.QemuUSBTablet</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,18 +24,10 @@
 	<dict>
 		<key>QemuUSBTablet</key>
 		<dict>
-			<key>IOProviderClass</key>
-			<string>IOHIDInterface</string>
-			<key>ProductID</key>
-			<integer>1</integer>
-			<key>VendorID</key>
-			<integer>1575</integer>
-			<key>IOClass</key>
-			<string>IOHIDEventDriver</string>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.iokit.IOHIDFamily</string>
 			<key>AbsoluteAxisBoundsRemovalPercentage</key>
 			<integer>0</integer>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IOHIDFamily</string>
 			<key>DeviceUsagePairs</key>
 			<array>
 				<dict>
@@ -45,6 +37,14 @@
 					<integer>1</integer>
 				</dict>
 			</array>
+			<key>IOClass</key>
+			<string>IOHIDEventDriver</string>
+			<key>IOProviderClass</key>
+			<string>IOHIDInterface</string>
+			<key>ProductID</key>
+			<integer>1</integer>
+			<key>VendorID</key>
+			<integer>1575</integer>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>

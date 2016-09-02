@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>eu.dennis-jordan.driver.QemuUSBTablet</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -26,22 +26,22 @@
 	<dict>
 		<key>QemuUSBTabletHIDDevice</key>
 		<dict>
+			<key>AbsoluteAxisBoundsRemovalPercentage</key>
+			<integer>0</integer>
+			<key>CFBundleIdentifier</key>
+			<string>eu.philjordan.driver.QemuUSBTablet</string>
+			<key>IOClass</key>
+			<string>eu_philjordan_driver_QemuUSBTabletDriver</string>
 			<key>IOProviderClass</key>
 			<string>IOUSBInterface</string>
+			<key>bConfigurationValue</key>
+			<integer>1</integer>
+			<key>bInterfaceNumber</key>
+			<integer>0</integer>
 			<key>idProduct</key>
 			<integer>1</integer>
 			<key>idVendor</key>
 			<integer>1575</integer>
-			<key>IOClass</key>
-			<string>eu_philjordan_driver_QemuUSBTabletDriver</string>
-			<key>bInterfaceNumber</key>
-			<integer>0</integer>
-			<key>bConfigurationValue</key>
-			<integer>1</integer>
-			<key>CFBundleIdentifier</key>
-			<string>eu.philjordan.driver.QemuUSBTablet</string>
-			<key>AbsoluteAxisBoundsRemovalPercentage</key>
-			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
