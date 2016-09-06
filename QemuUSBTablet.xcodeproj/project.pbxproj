@@ -13,57 +13,34 @@
 			buildPhases = (
 			);
 			dependencies = (
-				29BA3F681A548C3C0067FC9E /* PBXTargetDependency */,
+				4A45FE8E1D79DA81001A73D7 /* PBXTargetDependency */,
+				4A45FE8C1D79DA7E001A73D7 /* PBXTargetDependency */,
 				29BA3F6A1A548C3C0067FC9E /* PBXTargetDependency */,
-				29BA3F6C1A548C3C0067FC9E /* PBXTargetDependency */,
 			);
 			name = "QemuUSBTablet-all";
 			productName = all;
 		};
-		29BA3F5E1A548C240067FC9E /* QemuUSBTablet-Distribution-Package */ = {
+		4A45FE871D79D858001A73D7 /* QemuUSBTabletMavericks */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 29BA3F5F1A548C240067FC9E /* Build configuration list for PBXAggregateTarget "QemuUSBTablet-Distribution-Package" */;
+			buildConfigurationList = 4A45FE881D79D858001A73D7 /* Build configuration list for PBXAggregateTarget "QemuUSBTabletMavericks" */;
 			buildPhases = (
+				4A45FE8F1D79DA8A001A73D7 /* ShellScript */,
 			);
 			dependencies = (
-				29BA3F631A548C2D0067FC9E /* PBXTargetDependency */,
-				29BA3F651A548C2D0067FC9E /* PBXTargetDependency */,
 			);
-			name = "QemuUSBTablet-Distribution-Package";
-			productName = "Distribution-Package";
+			name = QemuUSBTabletMavericks;
+			productName = QemuUSBTabletMavericks;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		29BA3F581A543C0C0067FC9E /* PJQemuUSBTabletDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29BA3F561A543C0C0067FC9E /* PJQemuUSBTabletDriver.cpp */; };
 		29BA3F591A543C0C0067FC9E /* PJQemuUSBTabletDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 29BA3F571A543C0C0067FC9E /* PJQemuUSBTabletDriver.h */; };
-		29BA3F701A548FF20067FC9E /* QemuUSBTabletUSBDriver-kext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29BA3F6F1A548FF20067FC9E /* QemuUSBTabletUSBDriver-kext.plist */; };
 		4AEF51731D61F918004E4614 /* QemuUSBTablet1011.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AEF51721D61F918004E4614 /* QemuUSBTablet1011.h */; };
 		4AEF51751D61F918004E4614 /* QemuUSBTablet1011.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF51741D61F918004E4614 /* QemuUSBTablet1011.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		29BA3F621A548C2D0067FC9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2923E204196DB2C900724858 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2923E20D196DB2C900724858;
-			remoteInfo = QemuUSBTabletUSBDriver;
-		};
-		29BA3F641A548C2D0067FC9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2923E204196DB2C900724858 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2923E238196F186D00724858;
-			remoteInfo = QemuUSBTablet;
-		};
-		29BA3F671A548C3C0067FC9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2923E204196DB2C900724858 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2923E20D196DB2C900724858;
-			remoteInfo = QemuUSBTabletUSBDriver;
-		};
 		29BA3F691A548C3C0067FC9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2923E204196DB2C900724858 /* Project object */;
@@ -71,12 +48,19 @@
 			remoteGlobalIDString = 2923E238196F186D00724858;
 			remoteInfo = QemuUSBTablet;
 		};
-		29BA3F6B1A548C3C0067FC9E /* PBXContainerItemProxy */ = {
+		4A45FE8B1D79DA7E001A73D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2923E204196DB2C900724858 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29BA3F5E1A548C240067FC9E;
-			remoteInfo = "Distribution-Package";
+			remoteGlobalIDString = 4AEF516F1D61F918004E4614;
+			remoteInfo = QemuUSBTablet1011;
+		};
+		4A45FE8D1D79DA81001A73D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2923E204196DB2C900724858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A45FE871D79D858001A73D7;
+			remoteInfo = QemuUSBTabletMavericks;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -88,13 +72,14 @@
 		2923E247196F194500724858 /* QemuUSBTabletMavericks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QemuUSBTabletMavericks-Info.plist"; sourceTree = "<group>"; };
 		29BA3F561A543C0C0067FC9E /* PJQemuUSBTabletDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PJQemuUSBTabletDriver.cpp; sourceTree = "<group>"; };
 		29BA3F571A543C0C0067FC9E /* PJQemuUSBTabletDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJQemuUSBTabletDriver.h; sourceTree = "<group>"; };
-		29BA3F6E1A548FEC0067FC9E /* QemuUSBTablet-kext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "QemuUSBTablet-kext.plist"; path = "pkg/QemuUSBTablet-kext.plist"; sourceTree = "<group>"; };
-		29BA3F6F1A548FF20067FC9E /* QemuUSBTabletUSBDriver-kext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "QemuUSBTabletUSBDriver-kext.plist"; path = "pkg/QemuUSBTabletUSBDriver-kext.plist"; sourceTree = "<group>"; };
-		29BA3F711A5497840067FC9E /* Distribution.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Distribution.xml; path = pkg/Distribution.xml; sourceTree = "<group>"; };
+		29BA3F711A5497840067FC9E /* Distribution.xml */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = text.xml; name = Distribution.xml; path = pkg/Distribution.xml; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		29BA3F721A5497900067FC9E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = pkg/Resources; sourceTree = "<group>"; };
 		29BA3F731A5497900067FC9E /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scripts; path = pkg/scripts; sourceTree = "<group>"; };
 		29BA3F741A549D520067FC9E /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		29BA3F751A54A1000067FC9E /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		4A1539CB1D7D850F0076AB4C /* build-combined-package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "build-combined-package.sh"; path = "pkg/build-combined-package.sh"; sourceTree = "<group>"; };
+		4A1539CC1D7D850F0076AB4C /* create-distribution-xml.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "create-distribution-xml.sh"; path = "pkg/create-distribution-xml.sh"; sourceTree = "<group>"; };
+		4A1539CF1D7D88C50076AB4C /* distribution-xml.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "distribution-xml.patch"; path = "pkg/distribution-xml.patch"; sourceTree = "<group>"; };
 		4AEF51701D61F918004E4614 /* QemuUSBTablet1011.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QemuUSBTablet1011.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEF51721D61F918004E4614 /* QemuUSBTablet1011.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QemuUSBTablet1011.h; sourceTree = "<group>"; };
 		4AEF51741D61F918004E4614 /* QemuUSBTablet1011.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QemuUSBTablet1011.cpp; sourceTree = "<group>"; };
@@ -204,8 +189,9 @@
 		29BA3F6D1A548C4D0067FC9E /* pkg */ = {
 			isa = PBXGroup;
 			children = (
-				29BA3F6E1A548FEC0067FC9E /* QemuUSBTablet-kext.plist */,
-				29BA3F6F1A548FF20067FC9E /* QemuUSBTabletUSBDriver-kext.plist */,
+				4A1539CF1D7D88C50076AB4C /* distribution-xml.patch */,
+				4A1539CB1D7D850F0076AB4C /* build-combined-package.sh */,
+				4A1539CC1D7D850F0076AB4C /* create-distribution-xml.sh */,
 				29BA3F711A5497840067FC9E /* Distribution.xml */,
 				29BA3F721A5497900067FC9E /* Resources */,
 				29BA3F731A5497900067FC9E /* scripts */,
@@ -328,8 +314,8 @@
 					29BA3F5A1A548C0F0067FC9E = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					29BA3F5E1A548C240067FC9E = {
-						CreatedOnToolsVersion = 6.1.1;
+					4A45FE871D79D858001A73D7 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 					4AEF516F1D61F918004E4614 = {
 						CreatedOnToolsVersion = 7.2;
@@ -348,11 +334,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2923E20D196DB2C900724858 /* QemuUSBTabletUSBDriver */,
 				2923E238196F186D00724858 /* QemuUSBTablet */,
-				29BA3F5A1A548C0F0067FC9E /* QemuUSBTablet-all */,
-				29BA3F5E1A548C240067FC9E /* QemuUSBTablet-Distribution-Package */,
+				2923E20D196DB2C900724858 /* QemuUSBTabletUSBDriver */,
 				4AEF516F1D61F918004E4614 /* QemuUSBTablet1011 */,
+				29BA3F5A1A548C0F0067FC9E /* QemuUSBTablet-all */,
+				4A45FE871D79D858001A73D7 /* QemuUSBTabletMavericks */,
 			);
 		};
 /* End PBXProject section */
@@ -362,7 +348,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29BA3F701A548FF20067FC9E /* QemuUSBTabletUSBDriver-kext.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +384,22 @@
 		};
 /* End PBXRezBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A45FE8F1D79DA8A001A73D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export XCODE6APP=`mdfind 'kMDItemCFBundleIdentifier = \"com.apple.dt.Xcode\" && (kMDItemVersion = \"6.4\" || kMDItemVersion = \"6.3.2\")' | head -n 1`\necho Xcode 6 location: $XCODE6APP\n\"$XCODE6APP/Contents/Developer/usr/bin/xcodebuild\" -project \"$PROJECT_DIR/QemuUSBTablet.xcodeproj\" -target QemuUSBTabletUSBDriver \"$ACTION\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2923E208196DB2C900724858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -426,30 +427,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		29BA3F631A548C2D0067FC9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2923E20D196DB2C900724858 /* QemuUSBTabletUSBDriver */;
-			targetProxy = 29BA3F621A548C2D0067FC9E /* PBXContainerItemProxy */;
-		};
-		29BA3F651A548C2D0067FC9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2923E238196F186D00724858 /* QemuUSBTablet */;
-			targetProxy = 29BA3F641A548C2D0067FC9E /* PBXContainerItemProxy */;
-		};
-		29BA3F681A548C3C0067FC9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2923E20D196DB2C900724858 /* QemuUSBTabletUSBDriver */;
-			targetProxy = 29BA3F671A548C3C0067FC9E /* PBXContainerItemProxy */;
-		};
 		29BA3F6A1A548C3C0067FC9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2923E238196F186D00724858 /* QemuUSBTablet */;
 			targetProxy = 29BA3F691A548C3C0067FC9E /* PBXContainerItemProxy */;
 		};
-		29BA3F6C1A548C3C0067FC9E /* PBXTargetDependency */ = {
+		4A45FE8C1D79DA7E001A73D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 29BA3F5E1A548C240067FC9E /* QemuUSBTablet-Distribution-Package */;
-			targetProxy = 29BA3F6B1A548C3C0067FC9E /* PBXContainerItemProxy */;
+			target = 4AEF516F1D61F918004E4614 /* QemuUSBTablet1011 */;
+			targetProxy = 4A45FE8B1D79DA7E001A73D7 /* PBXContainerItemProxy */;
+		};
+		4A45FE8E1D79DA81001A73D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A45FE871D79D858001A73D7 /* QemuUSBTabletMavericks */;
+			targetProxy = 4A45FE8D1D79DA81001A73D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -471,6 +462,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DSTROOT = "$(PROJECT_DIR)/build/artefacts/$(TARGET_NAME)/";
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -511,6 +503,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = "$(PROJECT_DIR)/build/artefacts/$(TARGET_NAME)/";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -532,8 +525,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
-				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.2;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
+				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
+				MODULE_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
@@ -548,8 +542,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.9.0d1;
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTabletMavericks-Info.plist";
-				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.2;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
+				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
+				MODULE_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
@@ -570,10 +565,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTablet-Info.plist";
-				INSTALL_PATH = /System/Library/Extensions;
+				INSTALL_PATH = "$(SYSTEM_KEXT_INSTALL_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1;
+				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
+				MODULE_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
@@ -589,10 +584,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QemuUSBTablet/QemuUSBTablet-Prefix.pch";
 				INFOPLIST_FILE = "QemuUSBTablet/QemuUSBTablet-Info.plist";
-				INSTALL_PATH = /System/Library/Extensions;
+				INSTALL_PATH = "$(SYSTEM_KEXT_INSTALL_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				MODULE_NAME = eu.philjordan.driver.QemuUSBTablet;
-				MODULE_VERSION = 1.1;
+				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
+				MODULE_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
@@ -613,14 +608,14 @@
 			};
 			name = Release;
 		};
-		29BA3F601A548C240067FC9E /* Debug */ = {
+		4A45FE891D79D858001A73D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		29BA3F611A548C240067FC9E /* Release */ = {
+		4A45FE8A1D79D858001A73D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,6 +634,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = QemuUSBTablet1011/Info.plist;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
 				MODULE_VERSION = 1.2;
@@ -661,6 +657,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = QemuUSBTablet1011/Info.plist;
+				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
 				MODULE_VERSION = 1.2;
@@ -711,11 +708,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29BA3F5F1A548C240067FC9E /* Build configuration list for PBXAggregateTarget "QemuUSBTablet-Distribution-Package" */ = {
+		4A45FE881D79D858001A73D7 /* Build configuration list for PBXAggregateTarget "QemuUSBTabletMavericks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29BA3F601A548C240067FC9E /* Debug */,
-				29BA3F611A548C240067FC9E /* Release */,
+				4A45FE891D79D858001A73D7 /* Debug */,
+				4A45FE8A1D79D858001A73D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
