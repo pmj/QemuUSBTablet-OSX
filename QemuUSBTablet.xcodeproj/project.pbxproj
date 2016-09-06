@@ -528,7 +528,7 @@
 				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
 				MODULE_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.philjordan.driver.QemuUSBTablet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = kext;
@@ -545,7 +545,7 @@
 				INSTALL_PATH = "$(LIBRARY_KEXT_INSTALL_PATH)";
 				MODULE_NAME = "eu.dennis-jordan.driver.QemuUSBTablet";
 				MODULE_VERSION = 1.1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.dennis-jordan.driver.QemuUSBTablet";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.philjordan.driver.QemuUSBTablet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = kext;
