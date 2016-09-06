@@ -14,7 +14,8 @@ PKG_IDENTIFIER=eu.philjordan.driver.QemuUSBTablet
 KEXT_PATH=`find "$1/$PKG_COMPONENT_ROOT/" -iname *.kext`
 KEXT_VERSION=`/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$KEXT_PATH/Contents/Info.plist"`
 echo building $PKG_FILENAME version $KEXT_VERSION with $KEXT_PATH
-pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ "$PKG_FILENAME"
+pkgbuild --analyze --root "$1/$PKG_COMPONENT_ROOT" "$PKG_FILENAME.component.plist"
+pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --component-plist "$PKG_FILENAME.component.plist"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ --ownership recommended "$PKG_FILENAME"
 echo
 
 # 10.8 and older
@@ -25,7 +26,8 @@ PKG_IDENTIFIER=eu.philjordan.driver.QemuUSBTabletHIDEventDriver
 KEXT_PATH=`find "$1/$PKG_COMPONENT_ROOT/" -iname *.kext`
 KEXT_VERSION=`/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$KEXT_PATH/Contents/Info.plist"`
 echo building $PKG_FILENAME version $KEXT_VERSION with $KEXT_PATH
-pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ "$PKG_FILENAME"
+pkgbuild --analyze --root "$1/$PKG_COMPONENT_ROOT" "$PKG_FILENAME.component.plist"
+pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --component-plist "$PKG_FILENAME.component.plist"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ --ownership recommended "$PKG_FILENAME"
 echo
 
 # 10.11 and newer
@@ -36,7 +38,8 @@ PKG_IDENTIFIER=eu.dennis-jordan.driver.QemuUSBTablet-10.11
 KEXT_PATH=`find "$1/$PKG_COMPONENT_ROOT/" -iname *.kext`
 KEXT_VERSION=`/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$KEXT_PATH/Contents/Info.plist"`
 echo building $PKG_FILENAME version $KEXT_VERSION with $KEXT_PATH
-pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ "$PKG_FILENAME"
+pkgbuild --analyze --root "$1/$PKG_COMPONENT_ROOT" "$PKG_FILENAME.component.plist"
+pkgbuild --root "$1/$PKG_COMPONENT_ROOT"  --component-plist "$PKG_FILENAME.component.plist"  --identifier "$PKG_IDENTIFIER" --version $KEXT_VERSION --scripts ./scripts/ --ownership recommended "$PKG_FILENAME"
 echo
 
 
