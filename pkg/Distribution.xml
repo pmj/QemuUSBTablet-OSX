@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <installer-gui-script minSpecVersion="1">
+    <options customize="never" require-scripts="true"/>
     <script>
         <![CDATA[
         function install_only_if_older_than(os_version)
@@ -20,9 +21,9 @@
     <welcome file="Welcome.rtf"/>
     <license file="License.rtf"/>
 
-    <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
-    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet"/>
-    <pkg-ref id="eu.dennis-jordan.driver.QemuUSBTablet-10.11"/>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTabletHIDEventDriver" auth="root"/>
+    <pkg-ref id="eu.philjordan.driver.QemuUSBTablet" auth="root"/>
+    <pkg-ref id="eu.dennis-jordan.driver.QemuUSBTablet-10.11" auth="root"/>
     <choices-outline>
         <line choice="default">
             <line choice="eu.philjordan.driver.QemuUSBTabletHIDEventDriver"/>
