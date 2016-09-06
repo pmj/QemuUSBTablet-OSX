@@ -43,6 +43,30 @@
 			<key>idVendor</key>
 			<integer>1575</integer>
 		</dict>
+		<key>QemuUSBTablet</key>
+		<dict>
+			<key>AbsoluteAxisBoundsRemovalPercentage</key>
+			<integer>0</integer>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IOHIDFamily</string>
+			<key>DeviceUsagePairs</key>
+			<array>
+				<dict>
+					<key>DeviceUsage</key>
+					<integer>1</integer>
+					<key>DeviceUsagePage</key>
+					<integer>1</integer>
+				</dict>
+			</array>
+			<key>IOClass</key>
+			<string>IOHIDEventDriver</string>
+			<key>IOProviderClass</key>
+			<string>IOHIDInterface</string>
+			<key>ProductID</key>
+			<integer>1</integer>
+			<key>VendorID</key>
+			<integer>1575</integer>
+		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2014-2016 Phil &amp; Laura Dennis-Jordan. This code made available under the GNU LGPL</string>
